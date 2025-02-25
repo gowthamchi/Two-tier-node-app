@@ -1,0 +1,42 @@
+version: '3'
+
+services:
+  
+  nodeapp:
+    build:
+      context: .
+    container_name: nodeapp
+    ports:
+      - "8080:8080"
+    command: npm start
+    environment:
+      - MYSQL_HOST=mysql
+      - MYSQL_USER=root
+      - MYSQL_PASSWORD=1234
+      - MYSQL_DB=stuffmama
+    depends_on:
+      - mysql
+    networks:
+      - mynetwork
+
+  mysql:
+    image: mysql:5.7
+    container_name: mysql
+    ports:
+      - "3306:3306"
+    environment:
+      - MYSQL_ROOT_PASSWORD:1234
+      - MYSQL_DATABASE:stuffmama
+    volumes:
+      - mysql_data:/var/lib/mysql
+    networks:
+      - mynetwork
+
+networks:
+  mynetwork:
+    driver: bridge
+
+volumes:
+  mysql_data:
+    driver: local
+
