@@ -1,0 +1,107 @@
+*{
+    margin:0;
+    padding:0;
+    
+   
+}
+
+.image img{
+    height: 594px;
+    width: 600px;
+    margin-top: 0px;
+    margin-left:0px;
+    border-radius: 1px solid red;
+}
+.main{
+    display: flex;
+    justify-content: space-between;
+}
+
+.container{
+    
+    /* background-color:rgb(203,203,203); */
+    background-color: white;
+    color: black;
+
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 680px;
+    height: 600px;
+    margin-top: 0px;  
+    
+   
+    
+   
+}
+.container img{
+    height:80px;
+    width:400px;
+    margin:20px auto;
+}
+.container h1{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bolder;
+    padding-top: 30px;
+    font-weight: bolder;
+}
+.one{
+    font-size: 20px;
+   margin: 30px auto;
+     
+}
+.one input{
+    height: 40px;
+    width:300px;
+    border: none;   
+
+}
+.two{
+    font-size: 20px;
+    margin: 0 auto;
+}
+.two input{
+    height: 40px;
+    width:300px;
+    border:none;
+
+}
+button{
+    margin:30px auto;
+    height: 30px;
+    width: 130px;
+   border: none;
+  cursor: pointer;
+  color: white;
+  background-color: black;
+    
+    
+}
+.three{
+    display: flex;
+    justify-content: space-around ;
+    
+}
+.three a{
+    color: black;
+}
+
+ .img1 .google{
+    background-color: white;
+     height: 40px;
+     width:200px;
+     color: black;
+     border: 1px solid black;
+     margin-left:230px;
+     padding-left:30px
+
+}
+.img1 img{
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    left:840px;
+    top:493px;
+    
+}
